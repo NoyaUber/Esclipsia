@@ -1,0 +1,49 @@
+/* Eclipsia — base styles & palette */
+:root {
+  --c-black: #0d0a0b;
+  --c-charcoal: #24211f;
+  --c-charcoal-2: #35302d;
+  --c-maroon: #5e2328;
+  --c-maroon-hi: #8a3438;
+  --c-blue: #1c2638;
+  --c-gold: #b5913f;
+  --c-gold-hi: #e0c070;
+  --c-green: #4f5e45;
+  --c-text: #e8dcc4;
+  --c-text-dim: #9c8f7a;
+  --font-ui: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  --font-title: Georgia, "Times New Roman", serif;
+  --safe-l: env(safe-area-inset-left, 0px);
+  --safe-r: env(safe-area-inset-right, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--c-black);
+  color: var(--c-text);
+  font-family: var(--font-ui);
+  overflow: hidden;
+  overscroll-behavior: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body { position: fixed; inset: 0; }
+
+canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+}
+
+button { font-family: inherit; }
+[hidden] { display: none !important; }

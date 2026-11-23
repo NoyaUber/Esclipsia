@@ -1,0 +1,24 @@
+{
+  "_comment": "Static world object types. Sizes/hitboxes are in pixels relative to the object's top-left. sortY is the depth line used for y-sorting (defaults to h). layer 'foreground' objects draw above all entities and never collide.",
+  "types": {
+    "tree":        { "w": 16, "h": 32, "variants": 3, "hitbox": [2, 20, 12, 12] },
+    "tree_large":  { "w": 32, "h": 40, "variants": 1, "hitbox": [8, 28, 16, 12] },
+    "rock":        { "w": 16, "h": 16, "variants": 2, "hitbox": [2, 6, 12, 9] },
+    "bush":        { "w": 16, "h": 16, "variants": 2, "hitbox": [2, 6, 12, 9] },
+    "house":       { "w": 80, "h": 64, "variants": 3, "hitbox": [0, 18, 80, 46] },
+    "chapel_ruin": { "w": 80, "h": 64, "variants": 1, "hitbox": [0, 22, 80, 42] },
+    "pillar":      { "w": 16, "h": 32, "variants": 2, "hitbox": [3, 22, 10, 9] },
+    "ruin_wall":   { "w": 32, "h": 24, "variants": 2, "hitbox": [0, 12, 32, 12] },
+    "well":        { "w": 16, "h": 24, "variants": 1, "hitbox": [1, 10, 14, 13] },
+    "sign":        { "w": 16, "h": 16, "variants": 1, "hitbox": [3, 8, 10, 7] },
+    "noticeboard": { "w": 32, "h": 24, "variants": 1, "hitbox": [2, 14, 28, 9] },
+    "lamp":        { "w": 16, "h": 32, "variants": 1, "hitbox": [5, 26, 6, 5] },
+    "barrel":      { "w": 16, "h": 16, "variants": 1, "hitbox": [2, 4, 12, 11] },
+    "crate":       { "w": 16, "h": 16, "variants": 1, "hitbox": [1, 3, 14, 12] },
+    "fence_h":     { "w": 16, "h": 16, "variants": 1, "hitbox": [0, 8, 16, 6] },
+    "fence_v":     { "w": 16, "h": 16, "variants": 1, "hitbox": [5, 0, 6, 16] },
+    "stump":       { "w": 16, "h": 16, "variants": 1, "hitbox": [3, 7, 10, 7] },
+    "shrine_stone":{ "w": 16, "h": 24, "variants": 1, "hitbox": [2, 12, 12, 11] },
+    "canopy":      { "w": 48, "h": 32, "variants": 2, "layer": "foreground" }
+  }
+}
