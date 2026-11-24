@@ -1,0 +1,1010 @@
+{
+  "id": "ashenveil_forest",
+  "name": "Ashenveil Forest",
+  "region": "ashenveil",
+  "regionName": "ASHENVEIL",
+  "regionTitle": "The Weeping Wilds",
+  "tileSize": 16,
+  "width": 64,
+  "height": 48,
+  "legend": {
+    "ground": {
+      "g": {
+        "tile": "grass",
+        "solid": false
+      },
+      "G": {
+        "tile": "grass_dark",
+        "solid": false
+      },
+      "r": {
+        "tile": "dirt",
+        "solid": false
+      },
+      "s": {
+        "tile": "stone_path",
+        "solid": false
+      },
+      "d": {
+        "tile": "dark_soil",
+        "solid": false
+      },
+      "W": {
+        "tile": "water",
+        "solid": true
+      }
+    },
+    "decor": {
+      ",": {
+        "tile": "tall_grass"
+      },
+      "*": {
+        "tile": "flowers"
+      },
+      "o": {
+        "tile": "pebbles"
+      },
+      "m": {
+        "tile": "mushrooms"
+      },
+      "x": {
+        "tile": "rubble"
+      }
+    }
+  },
+  "layers": {
+    "ground": [
+      "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggdddddddgggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggdddddddgggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggdddddddgggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggdddddddgggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggdddddddgggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggsssssssssssssssssssssssssssssgggggg",
+      "gggggggggggggggggggggggggggggsssssssssssssssssssssssssssssgggggg",
+      "gggggggggggggggggggggggggggggsssssssssssssssssssssssssssssgggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",
+      "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",
+      "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "ggggggggrrrrrrrrrrrrrrrrrrrrrrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggrrrgggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+      "gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"
+    ],
+    "decor": [
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "....,...................,...................,...................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "....,...................,...................,...................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "....,...................,...................,...................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "....,...................,...................,...................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "....,...................,...................,...................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "........................,...................,...................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "....,...................,...................,...................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "....,...................,...................,...................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "....,...................,...................,...................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "....,...................,...................,...................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "................................................................",
+      "................................................................"
+    ]
+  },
+  "objects": [
+    {
+      "type": "tree",
+      "x": 32,
+      "y": 32,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 224,
+      "y": 32,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 272,
+      "y": 32,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 464,
+      "y": 32,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 512,
+      "y": 32,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 704,
+      "y": 32,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 752,
+      "y": 32,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 944,
+      "y": 32,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 80,
+      "y": 80,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 128,
+      "y": 80,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 320,
+      "y": 80,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 368,
+      "y": 80,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 608,
+      "y": 80,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 800,
+      "y": 80,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 848,
+      "y": 80,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 176,
+      "y": 128,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 224,
+      "y": 128,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 656,
+      "y": 128,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 704,
+      "y": 128,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 896,
+      "y": 128,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 32,
+      "y": 176,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 80,
+      "y": 176,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 272,
+      "y": 176,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 320,
+      "y": 176,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 752,
+      "y": 176,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 800,
+      "y": 176,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 128,
+      "y": 224,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 176,
+      "y": 224,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 368,
+      "y": 224,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 416,
+      "y": 224,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 608,
+      "y": 224,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 656,
+      "y": 224,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 848,
+      "y": 224,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 896,
+      "y": 224,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 32,
+      "y": 272,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 224,
+      "y": 272,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 272,
+      "y": 272,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 512,
+      "y": 272,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 704,
+      "y": 272,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 752,
+      "y": 272,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 944,
+      "y": 272,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 320,
+      "y": 320,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 368,
+      "y": 320,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 560,
+      "y": 320,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 608,
+      "y": 320,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 800,
+      "y": 320,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 848,
+      "y": 320,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 224,
+      "y": 368,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 416,
+      "y": 368,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 656,
+      "y": 368,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 704,
+      "y": 368,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 896,
+      "y": 368,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 944,
+      "y": 368,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 272,
+      "y": 416,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 320,
+      "y": 416,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 512,
+      "y": 416,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 560,
+      "y": 416,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 752,
+      "y": 416,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 800,
+      "y": 416,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 128,
+      "y": 464,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 176,
+      "y": 464,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 368,
+      "y": 464,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 416,
+      "y": 464,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 608,
+      "y": 464,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 656,
+      "y": 464,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 848,
+      "y": 464,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 896,
+      "y": 464,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 32,
+      "y": 512,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 224,
+      "y": 512,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 272,
+      "y": 512,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 512,
+      "y": 512,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 704,
+      "y": 512,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 752,
+      "y": 512,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 944,
+      "y": 512,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 80,
+      "y": 560,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 128,
+      "y": 560,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 320,
+      "y": 560,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 368,
+      "y": 560,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 560,
+      "y": 560,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 608,
+      "y": 560,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 800,
+      "y": 560,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 848,
+      "y": 560,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 176,
+      "y": 608,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 224,
+      "y": 608,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 416,
+      "y": 608,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 656,
+      "y": 608,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 704,
+      "y": 608,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 896,
+      "y": 608,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 944,
+      "y": 608,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 32,
+      "y": 656,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 80,
+      "y": 656,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 272,
+      "y": 656,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 320,
+      "y": 656,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 512,
+      "y": 656,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 560,
+      "y": 656,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 752,
+      "y": 656,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 800,
+      "y": 656,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 128,
+      "y": 704,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 176,
+      "y": 704,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 368,
+      "y": 704,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 416,
+      "y": 704,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 608,
+      "y": 704,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 656,
+      "y": 704,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 848,
+      "y": 704,
+      "variant": 1
+    },
+    {
+      "type": "tree",
+      "x": 896,
+      "y": 704,
+      "variant": 1
+    },
+    {
+      "type": "rock",
+      "x": 240,
+      "y": 272,
+      "variant": 0
+    },
+    {
+      "type": "rock",
+      "x": 288,
+      "y": 272,
+      "variant": 1
+    },
+    {
+      "type": "rock",
+      "x": 688,
+      "y": 464,
+      "variant": 0
+    },
+    {
+      "type": "rock",
+      "x": 736,
+      "y": 464,
+      "variant": 1
+    },
+    {
+      "type": "rock",
+      "x": 192,
+      "y": 576,
+      "variant": 0
+    },
+    {
+      "type": "rock",
+      "x": 768,
+      "y": 112,
+      "variant": 1
+    },
+    {
+      "type": "rock",
+      "x": 128,
+      "y": 144,
+      "variant": 1
+    },
+    {
+      "type": "rock",
+      "x": 880,
+      "y": 624,
+      "variant": 0
+    },
+    {
+      "type": "shrine_stone",
+      "x": 480,
+      "y": 128,
+      "variant": 0
+    },
+    {
+      "type": "crate",
+      "x": 128,
+      "y": 400,
+      "variant": 0
+    },
+    {
+      "type": "bush",
+      "x": 224,
+      "y": 304,
+      "variant": 0
+    },
+    {
+      "type": "bush",
+      "x": 688,
+      "y": 400,
+      "variant": 0
+    },
+    {
+      "type": "bush",
+      "x": 352,
+      "y": 544,
+      "variant": 0
+    },
+    {
+      "type": "bush",
+      "x": 80,
+      "y": 112,
+      "variant": 0
+    },
+    {
+      "type": "bush",
+      "x": 912,
+      "y": 560,
+      "variant": 0
+    },
+    {
+      "type": "bush",
+      "x": 624,
+      "y": 112,
+      "variant": 0
+    },
+    {
+      "type": "bush",
+      "x": 288,
+      "y": 640,
+      "variant": 0
+    },
+    {
+      "type": "bush",
+      "x": 832,
+      "y": 304,
+      "variant": 1
+    }
+  ],
+  "npcs": [],
+  "interactables": [
+    {
+      "id": "ancient_altar",
+      "name": "Ancient Altar",
+      "x": 30,
+      "y": 8,
+      "lines": [
+        "Ancient runes cover the altar. A faint Aether pulse answers your touch."
+      ]
+    },
+    {
+      "id": "forest_hidden_chest",
+      "name": "Hidden Chest",
+      "x": 8,
+      "y": 25,
+      "lines": [
+        "A weathered chest lies beneath the roots."
+      ]
+    },
+    {
+      "id": "forest_to_village",
+      "name": "Village Road",
+      "x": 0,
+      "y": 23,
+      "lines": [
+        "The path returns to Ashenveil Village."
+      ],
+      "transition": {
+        "mapId": "ashenveil_village",
+        "spawn": "forest_return"
+      }
+    },
+    {
+      "id": "forest_to_chapel",
+      "name": "Chapel Path",
+      "x": 60,
+      "y": 12,
+      "lines": [
+        "A ruined stone path leads to the Forgotten Chapel."
+      ],
+      "transition": {
+        "mapId": "forgotten_chapel_entrance",
+        "spawn": "chapel_path_entry"
+      }
+    },
+    {
+      "id": "forest_herb_patch_1",
+      "name": "Wild Herb",
+      "x": 14,
+      "y": 19,
+      "lines": [
+        "A small cluster of medicinal herbs grows here."
+      ],
+      "collectItem": {
+        "id": "herb",
+        "amount": 1
+      }
+    },
+    {
+      "id": "forest_herb_patch_2",
+      "name": "Wild Herb",
+      "x": 43,
+      "y": 25,
+      "lines": [
+        "A small cluster of medicinal herbs grows here."
+      ],
+      "collectItem": {
+        "id": "herb",
+        "amount": 1
+      }
+    },
+    {
+      "id": "forest_herb_patch_3",
+      "name": "Wild Herb",
+      "x": 22,
+      "y": 34,
+      "lines": [
+        "A small cluster of medicinal herbs grows here."
+      ],
+      "collectItem": {
+        "id": "herb",
+        "amount": 1
+      }
+    }
+  ],
+  "spawns": {
+    "forest_village_entrance": {
+      "x": 3,
+      "y": 23,
+      "facing": "right"
+    },
+    "forest_return": {
+      "x": 5,
+      "y": 23,
+      "facing": "right"
+    },
+    "chapel_path": {
+      "x": 58,
+      "y": 12,
+      "facing": "right"
+    }
+  },
+  "encounterZones": [
+    {
+      "id": "weeping_wilds",
+      "x": 6,
+      "y": 6,
+      "width": 52,
+      "height": 36,
+      "encounterTable": "ashenveil_forest"
+    }
+  ]
+}

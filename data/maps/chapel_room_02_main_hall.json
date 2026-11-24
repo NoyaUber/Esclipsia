@@ -1,0 +1,177 @@
+{
+  "id": "chapel_room_02_main_hall",
+  "name": "Main Hall",
+  "region": "ashenveil",
+  "regionName": "ASHENVEIL",
+  "regionTitle": "Forgotten Chapel",
+  "tileSize": 16,
+  "width": 24,
+  "height": 18,
+  "legend": {
+    "ground": {
+      "s": {
+        "tile": "stone_path",
+        "solid": false
+      },
+      "w": {
+        "tile": "dark_soil",
+        "solid": true
+      }
+    },
+    "decor": {
+      "x": {
+        "tile": "rubble"
+      },
+      "o": {
+        "tile": "pebbles"
+      }
+    }
+  },
+  "layers": {
+    "ground": [
+      "wwwwwwwwwwwwwwwwwwwwwwww",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssswwwwwwssswwwwwwssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wwwwwwwwwwwwwwwwwwwwwwww"
+    ],
+    "decor": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ]
+  },
+  "objects": [
+    {
+      "type": "crate",
+      "x": 128,
+      "y": 80
+    },
+    {
+      "type": "crate",
+      "x": 240,
+      "y": 80
+    },
+    {
+      "type": "pillar",
+      "x": 128,
+      "y": 176
+    },
+    {
+      "type": "pillar",
+      "x": 240,
+      "y": 176
+    },
+    {
+      "type": "shrine_stone",
+      "x": 176,
+      "y": 80
+    },
+    {
+      "type": "crate",
+      "x": 96,
+      "y": 80
+    },
+    {
+      "type": "crate",
+      "x": 272,
+      "y": 80
+    }
+  ],
+  "npcs": [],
+  "interactables": [
+    {
+      "id": "main_hall_to_entrance",
+      "name": "Passage",
+      "x": 11,
+      "y": 15,
+      "lines": [
+        "The entrance chamber lies to the south."
+      ],
+      "transition": {
+        "mapId": "chapel_room_01_entrance",
+        "spawn": "from_main_hall",
+        "dungeonId": "forgotten_chapel",
+        "roomId": "chapel_room_01_entrance",
+        "connectionId": "chapel_02_to_01"
+      }
+    },
+    {
+      "id": "main_hall_to_library",
+      "name": "Passage",
+      "x": 2,
+      "y": 8,
+      "lines": [
+        "A narrow arch leads to the Forgotten Library."
+      ],
+      "transition": {
+        "mapId": "chapel_room_03_library",
+        "spawn": "from_main_hall",
+        "dungeonId": "forgotten_chapel",
+        "roomId": "chapel_room_03_library",
+        "connectionId": "chapel_02_to_03"
+      }
+    },
+    {
+      "id": "main_hall_to_sanctuary",
+      "name": "Passage",
+      "x": 20,
+      "y": 8,
+      "lines": [
+        "A fractured arch opens toward the Broken Sanctuary."
+      ],
+      "transition": {
+        "mapId": "chapel_room_04_sanctuary",
+        "spawn": "from_main_hall",
+        "dungeonId": "forgotten_chapel",
+        "roomId": "chapel_room_04_sanctuary",
+        "connectionId": "chapel_02_to_04"
+      }
+    }
+  ],
+  "spawns": {
+    "from_entrance": {
+      "x": 11,
+      "y": 14,
+      "facing": "up"
+    },
+    "from_library": {
+      "x": 11,
+      "y": 14,
+      "facing": "left"
+    },
+    "from_sanctuary": {
+      "x": 11,
+      "y": 14,
+      "facing": "right"
+    }
+  }
+}

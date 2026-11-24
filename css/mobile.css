@@ -1,0 +1,158 @@
+/* ============================================================
+   Touch controls (Android-first). Hidden unless body.touch-mode.
+   Sizes are driven by CSS variables chosen in Settings → Control Size.
+   ============================================================ */
+body {
+  --pad-size: clamp(180px, 56vh, 270px);   /* Large (default) */
+  --btn-a: clamp(76px, 24vh, 112px);
+  --btn-b: calc(var(--btn-a) * 0.86);
+  --ctrl-gap: 12px;
+}
+body.controls-medium { --pad-size: clamp(160px, 48vh, 230px); --btn-a: clamp(68px, 20vh, 96px); }
+body.controls-xl { --pad-size: clamp(210px, 64vh, 310px); --btn-a: clamp(88px, 28vh, 128px); }
+
+#touch-controls {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;   /* only the controls themselves receive touches */
+  display: none;
+}
+body.touch-mode #touch-controls { display: block; }
+#touch-controls .dpad,
+#touch-controls .touch-btn { touch-action: none; }
+
+/* ---------- D-pad (bottom-left) ---------- */
+.dpad {
+  position: absolute;
+  left: calc(var(--ctrl-gap) + var(--safe-l));
+  bottom: calc(var(--ctrl-gap) + var(--safe-b));
+  width: var(--pad-size);
+  height: var(--pad-size);
+  pointer-events: auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(36, 33, 31, 0.42) 0%, rgba(13, 10, 11, 0.18) 72%, transparent 73%);
+}
+.dpad-arm, .dpad-center {
+  position: absolute;
+  background: rgba(36, 33, 31, 0.72);
+  border: 2px solid rgba(181, 145, 63, 0.65);
+  transition: transform 60ms ease-out, background-color 60ms, border-color 60ms;
+}
+.dpad-up, .dpad-down { left: 33%; width: 34%; height: 36%; }
+.dpad-left, .dpad-right { top: 33%; width: 36%; height: 34%; }
+.dpad-up { top: 0; border-bottom: none; border-radius: 8px 8px 0 0; }
+.dpad-down { bottom: 0; border-top: none; border-radius: 0 0 8px 8px; }
+.dpad-left { left: 0; border-right: none; border-radius: 8px 0 0 8px; }
+.dpad-right { right: 0; border-left: none; border-radius: 0 8px 8px 0; }
+.dpad-center { left: 33%; top: 33%; width: 34%; height: 34%; border: none; background: rgba(36, 33, 31, 0.72); }
+.dpad-arm::after {
+  content: '';
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 0; height: 0;
+  border: calc(var(--pad-size) * 0.055) solid transparent;
+  transform: translate(-50%, -50%);
+}
+.dpad-up::after { border-bottom-color: rgba(224, 192, 112, 0.9); margin-top: calc(var(--pad-size) * -0.025); }
+.dpad-down::after { border-top-color: rgba(224, 192, 112, 0.9); margin-top: calc(var(--pad-size) * 0.025); }
+.dpad-left::after { border-right-color: rgba(224, 192, 112, 0.9); margin-left: calc(var(--pad-size) * -0.025); }
+.dpad-right::after { border-left-color: rgba(224, 192, 112, 0.9); margin-left: calc(var(--pad-size) * 0.025); }
+/* pressed feedback: brighter, gold border, slightly smaller */
+.dpad.active-up .dpad-up,
+.dpad.active-down .dpad-down,
+.dpad.active-left .dpad-left,
+.dpad.active-right .dpad-right {
+  background: rgba(138, 52, 56, 0.95);
+  border-color: #e0c070;
+  transform: scale(0.95);
+}
+
+/* ---------- A / B (bottom-right) ---------- */
+.action-buttons {
+  position: absolute;
+  right: calc(var(--ctrl-gap) + var(--safe-r));
+  bottom: calc(var(--ctrl-gap) + var(--safe-b));
+  width: calc(var(--btn-a) + var(--btn-b) * 0.8 + 6px);
+  height: calc(var(--btn-a) * 0.7 + var(--btn-b) + 6px);
+  pointer-events: none;
+}
+.touch-btn {
+  pointer-events: auto;
+  border: 2px solid rgba(181, 145, 63, 0.75);
+  color: var(--c-text);
+  font-weight: bold;
+  background: rgba(36, 33, 31, 0.72);
+  padding: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  transition: transform 60ms ease-out, background-color 60ms, border-color 60ms, filter 60ms;
+}
+.touch-btn.is-pressed {
+  background: rgba(138, 52, 56, 0.95);
+  border-color: #e0c070;
+  filter: brightness(1.25);
+  transform: scale(0.92);
+}
+.btn-a, .btn-b {
+  position: absolute;
+  border-radius: 50%;
+  font-family: var(--font-title);
+}
+.btn-a {
+  right: 0; top: 0;
+  width: var(--btn-a); height: var(--btn-a);
+  font-size: calc(var(--btn-a) * 0.36);
+  background: rgba(94, 35, 40, 0.78);
+}
+.btn-b {
+  left: 0; bottom: 0;
+  width: var(--btn-b); height: var(--btn-b);
+  font-size: calc(var(--btn-b) * 0.36);
+}
+
+/* ---------- MENU / FULL (top-right) ---------- */
+.system-buttons {
+  position: absolute;
+  top: calc(8px + var(--safe-t));
+  right: calc(var(--ctrl-gap) + var(--safe-r));
+  display: flex;
+  gap: 10px;
+}
+.btn-system {
+  min-width: 68px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+/* ---------- Portrait warning ---------- */
+#rotate-hint {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  background: var(--c-black);
+  color: var(--c-text);
+  text-align: center;
+  font-size: 16px;
+  touch-action: none;
+}
+#rotate-hint small { color: var(--c-text-dim); font-size: 13px; }
+.rotate-icon {
+  width: 44px; height: 72px;
+  border: 3px solid var(--c-gold);
+  border-radius: 8px;
+  animation: rotate-hint 2s ease-in-out infinite;
+}
+@keyframes rotate-hint { 0%, 30% { transform: rotate(0); } 60%, 100% { transform: rotate(-90deg); } }
+
+@media (orientation: portrait) {
+  body.touch-mode #rotate-hint { display: flex; }
+  body.touch-mode #touch-controls { display: none; }
+}

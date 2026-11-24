@@ -1,0 +1,162 @@
+{
+  "id": "chapel_room_03_library",
+  "name": "Forgotten Library",
+  "region": "ashenveil",
+  "regionName": "ASHENVEIL",
+  "regionTitle": "Forgotten Chapel",
+  "tileSize": 16,
+  "width": 24,
+  "height": 18,
+  "legend": {
+    "ground": {
+      "s": {
+        "tile": "stone_path",
+        "solid": false
+      },
+      "w": {
+        "tile": "dark_soil",
+        "solid": true
+      }
+    },
+    "decor": {
+      "x": {
+        "tile": "rubble"
+      },
+      "o": {
+        "tile": "pebbles"
+      }
+    }
+  },
+  "layers": {
+    "ground": [
+      "wwwwwwwwwwwwwwwwwwwwwwww",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssswssssssssssw",
+      "wssssssssssswssssssssssw",
+      "wssssssssssswssssssssssw",
+      "wssssssssssswssssssssssw",
+      "wssssssssssswssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssswssssssssssw",
+      "wssssssssssswssssssssssw",
+      "wssssssssssswssssssssssw",
+      "wssssssssssswssssssssssw",
+      "wssssssssssswssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wwwwwwwwwwwwwwwwwwwwwwww"
+    ],
+    "decor": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ]
+  },
+  "objects": [
+    {
+      "type": "crate",
+      "x": 80,
+      "y": 48
+    },
+    {
+      "type": "crate",
+      "x": 112,
+      "y": 48
+    },
+    {
+      "type": "crate",
+      "x": 144,
+      "y": 48
+    },
+    {
+      "type": "crate",
+      "x": 80,
+      "y": 192
+    },
+    {
+      "type": "crate",
+      "x": 112,
+      "y": 192
+    },
+    {
+      "type": "crate",
+      "x": 144,
+      "y": 192
+    }
+  ],
+  "npcs": [],
+  "interactables": [
+    {
+      "id": "chapel_library_chronicle",
+      "name": "Weathered Chronicle",
+      "x": 6,
+      "y": 5,
+      "lines": [
+        "A record lies open beneath a layer of ash.",
+        "The final lines mention a structure beneath the chapel."
+      ],
+      "worldObjectId": "chapel_library_chronicle"
+    },
+    {
+      "id": "library_to_main_hall",
+      "name": "Passage",
+      "x": 11,
+      "y": 15,
+      "lines": [
+        "Return to the Main Hall."
+      ],
+      "transition": {
+        "mapId": "chapel_room_02_main_hall",
+        "spawn": "from_library",
+        "dungeonId": "forgotten_chapel",
+        "roomId": "chapel_room_02_main_hall",
+        "connectionId": "chapel_03_to_02"
+      }
+    },
+    {
+      "id": "library_to_sanctuary",
+      "name": "Passage",
+      "x": 20,
+      "y": 8,
+      "lines": [
+        "A side passage reaches the Broken Sanctuary."
+      ],
+      "transition": {
+        "mapId": "chapel_room_04_sanctuary",
+        "spawn": "from_library",
+        "dungeonId": "forgotten_chapel",
+        "roomId": "chapel_room_04_sanctuary",
+        "connectionId": "chapel_03_to_04"
+      }
+    }
+  ],
+  "spawns": {
+    "from_main_hall": {
+      "x": 2,
+      "y": 8,
+      "facing": "right"
+    },
+    "from_sanctuary": {
+      "x": 20,
+      "y": 8,
+      "facing": "left"
+    }
+  }
+}

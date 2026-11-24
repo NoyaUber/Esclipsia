@@ -1,0 +1,204 @@
+{
+  "id": "chapel_room_04_sanctuary",
+  "name": "Broken Sanctuary",
+  "region": "ashenveil",
+  "regionName": "ASHENVEIL",
+  "regionTitle": "Forgotten Chapel",
+  "tileSize": 16,
+  "width": 24,
+  "height": 18,
+  "legend": {
+    "ground": {
+      "s": {
+        "tile": "stone_path",
+        "solid": false
+      },
+      "w": {
+        "tile": "dark_soil",
+        "solid": true
+      }
+    },
+    "decor": {
+      "x": {
+        "tile": "rubble"
+      },
+      "o": {
+        "tile": "pebbles"
+      }
+    }
+  },
+  "layers": {
+    "ground": [
+      "wwwwwwwwwwwwwwwwwwwwwwww",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssswwwwwwssswwwwwwssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wwwwwwwwwwwwwwwwwwwwwwww"
+    ],
+    "decor": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ]
+  },
+  "objects": [
+    {
+      "type": "pillar",
+      "x": 96,
+      "y": 80
+    },
+    {
+      "type": "pillar",
+      "x": 256,
+      "y": 80
+    },
+    {
+      "type": "crate",
+      "x": 128,
+      "y": 160
+    },
+    {
+      "type": "crate",
+      "x": 224,
+      "y": 160
+    }
+  ],
+  "npcs": [],
+  "interactables": [
+    {
+      "id": "chapel_sanctuary_inscription",
+      "name": "Broken Inscription",
+      "x": 7,
+      "y": 6,
+      "lines": [
+        "The inscription is fractured beyond easy reading.",
+        "A few words remain: memory, oath, and the silence beneath."
+      ],
+      "worldObjectId": "chapel_sanctuary_inscription"
+    },
+    {
+      "id": "sanctuary_to_main_hall",
+      "name": "Passage",
+      "x": 11,
+      "y": 2,
+      "lines": [
+        "Return to the Main Hall."
+      ],
+      "transition": {
+        "mapId": "chapel_room_02_main_hall",
+        "spawn": "from_sanctuary",
+        "dungeonId": "forgotten_chapel",
+        "roomId": "chapel_room_02_main_hall",
+        "connectionId": "chapel_04_to_02"
+      }
+    },
+    {
+      "id": "sanctuary_to_library",
+      "name": "Passage",
+      "x": 2,
+      "y": 8,
+      "lines": [
+        "A passage returns to the library."
+      ],
+      "transition": {
+        "mapId": "chapel_room_03_library",
+        "spawn": "from_sanctuary",
+        "dungeonId": "forgotten_chapel",
+        "roomId": "chapel_room_03_library",
+        "connectionId": "chapel_04_to_03"
+      }
+    },
+    {
+      "id": "sanctuary_to_sealed_chamber",
+      "name": "Passage",
+      "x": 11,
+      "y": 15,
+      "lines": [
+        "The sealed chamber lies beyond this arch."
+      ],
+      "transition": {
+        "mapId": "chapel_room_05_sealed_chamber",
+        "spawn": "from_sanctuary",
+        "dungeonId": "forgotten_chapel",
+        "roomId": "chapel_room_05_sealed_chamber",
+        "connectionId": "chapel_04_to_05"
+      }
+    },
+    {
+      "id": "sanctuary_to_ancient_sanctum",
+      "name": "Passage",
+      "x": 20,
+      "y": 8,
+      "lines": [
+        "A side aisle descends toward an ancient sanctum."
+      ],
+      "transition": {
+        "mapId": "chapel_room_06_ancient_sanctum",
+        "spawn": "from_sanctuary",
+        "dungeonId": "forgotten_chapel",
+        "roomId": "chapel_room_06_ancient_sanctum",
+        "connectionId": "chapel_04_to_06"
+      }
+    }
+  ],
+  "spawns": {
+    "from_main_hall": {
+      "x": 11,
+      "y": 2,
+      "facing": "down"
+    },
+    "from_library": {
+      "x": 11,
+      "y": 14,
+      "facing": "right"
+    },
+    "from_sealed_chamber": {
+      "x": 11,
+      "y": 14,
+      "facing": "up"
+    },
+    "from_ancient_sanctum": {
+      "x": 20,
+      "y": 8,
+      "facing": "left"
+    }
+  },
+  "encounterZones": [
+    {
+      "id": "chapel_room_04_sanctuary_encounters",
+      "x": 4,
+      "y": 4,
+      "width": 16,
+      "height": 10,
+      "encounterTable": "forgotten_chapel"
+    }
+  ]
+}

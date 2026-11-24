@@ -1,0 +1,118 @@
+{
+  "id": "chapel_room_01_entrance",
+  "name": "Entrance",
+  "region": "ashenveil",
+  "regionName": "ASHENVEIL",
+  "regionTitle": "Forgotten Chapel",
+  "tileSize": 16,
+  "width": 24,
+  "height": 18,
+  "legend": {
+    "ground": {
+      "s": {
+        "tile": "stone_path",
+        "solid": false
+      },
+      "w": {
+        "tile": "dark_soil",
+        "solid": true
+      }
+    },
+    "decor": {
+      "x": {
+        "tile": "rubble"
+      },
+      "o": {
+        "tile": "pebbles"
+      }
+    }
+  },
+  "layers": {
+    "ground": [
+      "wwwwwwwwwwwwwwwwwwwwwwww",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wwwwwwwwwwwwwwwwwwwwwwww"
+    ],
+    "decor": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ]
+  },
+  "objects": [],
+  "npcs": [],
+  "interactables": [
+    {
+      "id": "chapel_return_outside",
+      "name": "Passage",
+      "x": 11,
+      "y": 15,
+      "lines": [
+        "The broken arch leads back outside."
+      ],
+      "transition": {
+        "mapId": "forgotten_chapel_entrance",
+        "spawn": "chapel_interior_return",
+        "exitDungeon": true
+      }
+    },
+    {
+      "id": "entrance_to_main_hall",
+      "name": "Passage",
+      "x": 11,
+      "y": 2,
+      "lines": [
+        "A broad passage leads into the Main Hall."
+      ],
+      "transition": {
+        "mapId": "chapel_room_02_main_hall",
+        "spawn": "from_entrance",
+        "dungeonId": "forgotten_chapel",
+        "roomId": "chapel_room_02_main_hall",
+        "connectionId": "chapel_01_to_02"
+      }
+    }
+  ],
+  "spawns": {
+    "entry_from_exterior": {
+      "x": 11,
+      "y": 13,
+      "facing": "up"
+    },
+    "from_main_hall": {
+      "x": 11,
+      "y": 13,
+      "facing": "up"
+    }
+  }
+}

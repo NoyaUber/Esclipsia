@@ -1,0 +1,136 @@
+{
+  "id": "chapel_room_06_ancient_sanctum",
+  "name": "Ancient Sanctum",
+  "region": "ashenveil",
+  "regionName": "ASHENVEIL",
+  "regionTitle": "Forgotten Chapel",
+  "tileSize": 16,
+  "width": 24,
+  "height": 18,
+  "legend": {
+    "ground": {
+      "s": {
+        "tile": "stone_path",
+        "solid": false
+      },
+      "w": {
+        "tile": "dark_soil",
+        "solid": true
+      }
+    },
+    "decor": {
+      "x": {
+        "tile": "rubble"
+      },
+      "o": {
+        "tile": "pebbles"
+      }
+    }
+  },
+  "layers": {
+    "ground": [
+      "wwwwwwwwwwwwwwwwwwwwwwww",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wsssswwwwwwsswwwwwwssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wssssssssssssssssssssssw",
+      "wwwwwwwwwwwwwwwwwwwwwwww"
+    ],
+    "decor": [
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................",
+      "........................"
+    ]
+  },
+  "objects": [
+    {
+      "type": "shrine_stone",
+      "x": 128,
+      "y": 80
+    },
+    {
+      "type": "shrine_stone",
+      "x": 240,
+      "y": 80
+    },
+    {
+      "type": "pillar",
+      "x": 176,
+      "y": 160
+    }
+  ],
+  "npcs": [],
+  "interactables": [
+    {
+      "id": "chapel_ancient_conduit",
+      "name": "Ancient Conduit",
+      "x": 16,
+      "y": 7,
+      "lines": [
+        "The structure hums beneath your hand.",
+        "A faint pulse travels through grooves cut into the stone."
+      ],
+      "worldObjectId": "chapel_ancient_conduit"
+    },
+    {
+      "id": "ancient_sanctum_return",
+      "name": "Passage",
+      "x": 2,
+      "y": 8,
+      "lines": [
+        "Return to the Broken Sanctuary."
+      ],
+      "transition": {
+        "mapId": "chapel_room_04_sanctuary",
+        "spawn": "from_ancient_sanctum",
+        "dungeonId": "forgotten_chapel",
+        "roomId": "chapel_room_04_sanctuary",
+        "connectionId": "chapel_06_to_04"
+      }
+    }
+  ],
+  "spawns": {
+    "from_sanctuary": {
+      "x": 2,
+      "y": 8,
+      "facing": "right"
+    }
+  },
+  "encounterZones": [
+    {
+      "id": "chapel_room_06_ancient_sanctum_encounters",
+      "x": 4,
+      "y": 4,
+      "width": 16,
+      "height": 10,
+      "encounterTable": "forgotten_chapel"
+    }
+  ]
+}

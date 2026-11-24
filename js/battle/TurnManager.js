@@ -1,0 +1,2 @@
+import {BATTLE_BALANCE} from '../data/battleBalance.js';
+export class TurnManager{constructor(balance=BATTLE_BALANCE){this.balance=balance;}order(playerAction,enemyAction,playerSpeed,enemySpeed,random=Math.random){const priority=a=>this.balance.actionPriorities[a?.type]??a?.priority??0;const p=priority(playerAction),e=priority(enemyAction);if(p!==e)return p>e?['player','enemy']:['enemy','player'];if(playerSpeed!==enemySpeed)return playerSpeed>enemySpeed?['player','enemy']:['enemy','player'];return random()<.5?['player','enemy']:['enemy','player'];}}

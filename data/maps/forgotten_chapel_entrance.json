@@ -1,0 +1,179 @@
+{
+  "id": "forgotten_chapel_entrance",
+  "name": "Forgotten Chapel Entrance",
+  "region": "ashenveil",
+  "regionName": "ASHENVEIL",
+  "regionTitle": "The Silent Sanctuary",
+  "tileSize": 16,
+  "width": 32,
+  "height": 24,
+  "legend": {
+    "ground": {
+      "g": {
+        "tile": "grass",
+        "solid": false
+      },
+      "G": {
+        "tile": "grass_dark",
+        "solid": false
+      },
+      "r": {
+        "tile": "dirt",
+        "solid": false
+      },
+      "s": {
+        "tile": "stone_path",
+        "solid": false
+      },
+      "d": {
+        "tile": "dark_soil",
+        "solid": false
+      },
+      "W": {
+        "tile": "water",
+        "solid": true
+      }
+    },
+    "decor": {
+      ",": {
+        "tile": "tall_grass"
+      },
+      "*": {
+        "tile": "flowers"
+      },
+      "o": {
+        "tile": "pebbles"
+      },
+      "m": {
+        "tile": "mushrooms"
+      },
+      "x": {
+        "tile": "rubble"
+      }
+    }
+  },
+  "layers": {
+    "ground": [
+      "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "GGGGGGGGGGGdddddddddddGGGGGGGGGG",
+      "GGGGGGGGGGGdddddddddddGGGGGGGGGG",
+      "GGGGGGGGGGGdddddddddddGGGGGGGGGG",
+      "GGGGGGGGGGGdddddddddddGGGGGGGGGG",
+      "GGGGGGGGGGGdddddddddddGGGGGGGGGG",
+      "GGGGGGGGGGGdddddddddddGGGGGGGGGG",
+      "GGGGGGGGGGGGGGGsssGGGGGGGGGGGGGG",
+      "ssssssssssssssssssssssssssssssss",
+      "ssssssssssssssssssssssssssssssss",
+      "ssssssssssssssssssssssssssssssss",
+      "GGGGGGGGGGGGGGGsssGGGGGGGGGGGGGG",
+      "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+      "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG"
+    ],
+    "decor": [
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................",
+      "................................"
+    ]
+  },
+  "objects": [
+    {
+      "type": "chapel_ruin",
+      "x": 192,
+      "y": 32,
+      "variant": 0
+    },
+    {
+      "type": "pillar",
+      "x": 160,
+      "y": 144,
+      "variant": 0
+    },
+    {
+      "type": "pillar",
+      "x": 336,
+      "y": 144,
+      "variant": 1
+    }
+  ],
+  "npcs": [],
+  "interactables": [
+    {
+      "id": "chapel_entrance_door",
+      "name": "Forgotten Chapel Door",
+      "x": 15,
+      "y": 5,
+      "lines": [
+        "The old seal has faded. Beyond the door, the Forgotten Chapel waits."
+      ],
+      "worldObjectId": "chapel_gate",
+      "transition": {
+        "mapId": "chapel_room_01_entrance",
+        "spawn": "entry_from_exterior",
+        "dungeonId": "forgotten_chapel",
+        "roomId": "chapel_room_01_entrance",
+        "enterDungeon": true
+      }
+    },
+    {
+      "id": "chapel_to_forest",
+      "name": "Forest Path",
+      "x": 0,
+      "y": 11,
+      "lines": [
+        "The forest path descends into the trees."
+      ],
+      "transition": {
+        "mapId": "ashenveil_forest",
+        "spawn": "chapel_path"
+      }
+    }
+  ],
+  "spawns": {
+    "chapel_path_entry": {
+      "x": 3,
+      "y": 11,
+      "facing": "right"
+    },
+    "chapel_return": {
+      "x": 3,
+      "y": 11,
+      "facing": "right"
+    },
+    "chapel_interior_return": {
+      "x": 15,
+      "y": 8,
+      "facing": "down"
+    }
+  }
+}
